@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+    id 'maven'
+}
+
+group 'info.blockchain'
+version = '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.7
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
